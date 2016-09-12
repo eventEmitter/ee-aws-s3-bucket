@@ -71,7 +71,32 @@ list files which have a certain path prefix, e.g. if you list «/te» all files 
 	};
 
 	myBucket.list( "/test/", handleListResult );
+    
+    
+### list common prefixes
 
+list common prefixes which have a certain path prefix & delimiter. (added by Garry Lachman, https://github.com/garrylachman)
+
+	myBucket.listCommonPrefixes( prefix, delimiter, callback( err, list, next ){} );
+
+- prefix: string
+- delimiter: string
+- callback: function, called when the list was returned. if the list contains > 1'000 entries a next callback parameter will be delivered ( mandatory )  
+
+#### example
+
+	var handleListCommonPrefixesResult = function( err, list, next ){
+		if ( err ) log.trace( err );
+		else {
+			log( list );
+
+			// get the next 1'000 items if available
+			if( next ) next( handleListCommonPrefixesResult );
+		}
+	};
+
+	myBucket.listCommonPrefixes( "", "/", handleListCommonPrefixesResult );
+    
 
 ### download files
 

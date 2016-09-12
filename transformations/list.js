@@ -20,4 +20,9 @@
 				} }
 			}
 		}
+        , CommonPrefixes: { name: "commonPrefixes", type: "array", rules:
+            {
+              Prefix: "prefix"
+            }
+        }
 	};
