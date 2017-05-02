@@ -1,5 +1,7 @@
 # ee-aws-s3-bucket
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-aws-s3-bucket.svg)](https://greenkeeper.io/)
+
 Easy AWS S3 Bucket implementation. Upload, download and delete ( recursive ) files from your buckets.
 
 ## installation
