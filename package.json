@@ -1,33 +1,33 @@
 {
-      "name"                        : "ee-aws-s3-bucket"
-    , "description"                 : "Easy AWS S3 Bucket implementation. Upload, download and delete ( recursive ) files from your buckets."
-    , "version"                     : "1.0.0"
-    , "homepage"                    : "https://github.com/eventEmitter/ee-aws-s3-bucket"
-    , "author"                      : "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)"
-    , "license"                     : "MIT"
-    , "repository": {
-          "url"                     : "https://github.com/eventEmitter/ee-aws-s3-bucket.git"
-        , "type"                    : "git"
-    }
-    , "engines": {
-        "node"                      : ">=v4"
-    }
-    , "bugs": {
-        "url"                       : "https://github.com/eventEmitter/ee-aws-s3-bucket/issues"
-    }
-    , "dependencies": {
-          "ee-class"                : "1.x"
-        , "ee-arguments"            : "1.x"
-        , "ee-types"                : "2.x"
-        , "ee-log"                  : "0.3.x"
-        , "ee-waiter"               : "0.1.x"
-        , "ee-error"                : "0.1.x"
-        , "ee-resource-pool"        : "0.1.x"
-        , "request"                 : "2.74.x"
-        , "ee-xml-to-json"          : "0.1.x"
-    }
-    , "devDependencies": {
-          "ee-project"              : "0.2.x"
-    }
-    , "optionalDependencies": {}
+    "name": "ee-aws-s3-bucket",
+    "description": "Easy AWS S3 Bucket implementation. Upload, download and delete ( recursive ) files from your buckets.",
+    "version": "1.0.1",
+    "homepage": "https://github.com/eventEmitter/ee-aws-s3-bucket",
+    "author": "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/eventEmitter/ee-aws-s3-bucket.git",
+        "type": "git"
+    },
+    "engines": {
+        "node": ">=v4"
+    },
+    "bugs": {
+        "url": "https://github.com/eventEmitter/ee-aws-s3-bucket/issues"
+    },
+    "dependencies": {
+        "ee-arguments": "1.x",
+        "ee-class": "1.x",
+        "ee-error": "0.1.x",
+        "ee-log": "1.x",
+        "ee-resource-pool": "0.1.x",
+        "ee-types": "2.x",
+        "ee-waiter": "0.1.x",
+        "ee-xml-to-json": "0.1.x",
+        "request": "^2.81.0"
+    },
+    "devDependencies": {
+        "ee-project": "0.2.x"
+    },
+    "optionalDependencies": {}
 }
